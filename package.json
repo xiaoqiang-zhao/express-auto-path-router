@@ -1,0 +1,43 @@
+{
+  "name": "express-auto-path-router",
+  "version": "1.2.0",
+  "description": "Auto path router serving middleware for express",
+  "scripts": {
+    "test": "node ./node_modules/.bin/mocha",
+    "demo": "node ./demo"
+  },
+  "keywords": [
+    "express",
+    "router",
+    "node",
+    "javascript"
+  ],
+  "author": {
+    "name": "赵晓强",
+    "email": "longze_xq@163.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/longze/koa-auto-path-router.git"
+  },
+  "devDependencies": {
+    "expect.js": "^0.3.1",
+    "express": "^4.15.4",
+    "koa-bodyparser": "^4.1.0",
+    "mocha": "^2.5.3",
+    "mochawesome": "^2.0.4",
+    "should": "^11.2.1",
+    "supertest": "^3.0.0"
+  },
+  "peerDevDependencies": {
+    "express": "^4.15.4"
+  },
+  "engines": {
+    "node": ">= 7.0.0",
+    "npm": ">= 3.0.0"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "url": "^0.11.0"
+  }
+}
