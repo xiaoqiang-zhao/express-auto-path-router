@@ -50,13 +50,12 @@ module.exports = function (req, res, next) {
 
 ## Demo
 
-    cd demo
     npm install
-    cd ..
     npm run demo
 
 ## Test
 
+    npm install
     npm run test
 
 ## License
