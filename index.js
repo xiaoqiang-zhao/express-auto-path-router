@@ -1,8 +1,9 @@
-'use strict';
-
 /**
- * Module dependencies.
+ * @file 功能文件
+ * @author longze
  */
+
+'use strict';
 
 const assert = require('assert');
 const fs = require('fs');
@@ -34,9 +35,6 @@ function getData(path, req, res, next) {
             console.log(e);
         }
     }
-    else {
-        body = 'can not find the path: ' + absolutePath;
-    }
 
     return body;
 }
@@ -44,7 +42,7 @@ function getData(path, req, res, next) {
 /**
  * auto path router from `root`.
  *
- * @param {String} root
+ * @param {string} rootPath mock文件夹根路径
  * @return {Function}
  * @api public
  */
@@ -52,7 +50,7 @@ function mock(rootPath) {
 
     assert(rootPath, 'root path directory is required to serve files');
     rootPath = resolve(rootPath);
-    
+
     return function (req, res, next) {
         let pathname = url.parse(req.url).pathname;
         let path = rootPath + '/' + req.method + pathname;
